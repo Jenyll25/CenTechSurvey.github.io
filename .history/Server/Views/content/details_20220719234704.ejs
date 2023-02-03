@@ -1,0 +1,55 @@
+<!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <h1><%= title %></h1>
+            <form class="form" method="post">
+              <div class="form-group">
+                <label for="TitleTextField">Title</label>
+                <input type="text" class="form-control" id="TitleTextField"
+                placeholder="Title of your Survey" name="surveyTitle" value="<%= surveys.Title %>" required>
+              </div>
+              <div class="form-group">
+                <label for="OwnerTextField">Owner</label>
+                <input type="text" class="form-control" id="OwnerTextField"
+                placeholder="Your Name" name="surveyOwner" value="<%= surveys.Owner %>" required>
+              </div>
+              <div class="form-group">
+                <label for="ActiveTextField">Active</label>
+                <input type="text" class="form-control" id="ActiveTextField"
+                placeholder="Yes/No" name="surveyIsActive" value="<%= surveys.isActive %>" required>
+              </div>
+              <div class="form-group">
+                <label for="StartTextField">Start Date</label>
+<<<<<<< HEAD
+                <input type="date" class="form-control" id="StartTextField"
+=======
+                <input type="text" class="form-control" id="StartTextField"
+>>>>>>> 96a67d42b1c06c1d12cc59ec4e9eac87b7542db5
+                placeholder="YYYY-MM-DD" name="surveyStartDate" value="<%= surveys.StartDate %>" required>
+              </div>
+              <div class="form-group">
+                <label for="EndTextField">End Date</label>
+<<<<<<< HEAD
+                <input type="date" class="form-control" id="EndTextField"
+=======
+                <input type="text" class="form-control" id="EndTextField"
+>>>>>>> 96a67d42b1c06c1d12cc59ec4e9eac87b7542db5
+                placeholder="YYYY-MM-DD" name="surveyEndDate" value="<%= surveys.EndDate %>" required>
+              </div>
+              <div class="form-group">
+                <label for="QuestionArrayTextField">Array of Questions</label>
+                <input type="text" class="form-control" id="QuestionArrayTextField"
+                placeholder="Number of Questions" name="surveyArrayQuestions" value="<%= surveys.Array_Questions %>" required>
+              </div>
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+<<<<<<< HEAD
+              <a href="/api/survey-list" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+=======
+              <a href="/survey-list" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+>>>>>>> 96a67d42b1c06c1d12cc59ec4e9eac87b7542db5
+            </form>
+        </div>
+      </div>
+    </div>
